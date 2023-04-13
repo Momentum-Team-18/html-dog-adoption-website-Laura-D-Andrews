@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;600&display=swap');
+
 body {
     padding: 0px;
     margin: 0;
 }
-.main {
-    margin-bottom: 50px; 
-}
+
 .header {
     background-color: #004175;
     padding: 20px;
@@ -13,36 +12,57 @@ body {
     font-family: Oswald;
     font-size: medium;
     color: white;
+    display: flex; /*allows children (nav and h1 element to be flexible*/ 
+    display: row; /*put nav and h1 in a row*/ 
+    justify-content: space-between; /*two items, so space between puts them on a
+
 }
+
 .nav {
     font-family: 'open sans';
     font-size: small;
     padding: 0px;
     margin: 0px;
 }
+
 .homepage-intro {
     font-family: 'open sans';
     font-size: x-small;
     margin: 25px 75px 5px 75px;
 }
+
 .adopt-heading {
     font-family: 'open sans';
     font-size: medium;
     margin: 15px 25px; 
 }
+
 .adopt-intro {
     font-family: 'open sans';
     font-size: x-small;
     margin: 10px 25px 5px 25px; 
 }
-.dog-card {
+
+.main {
+    display: flex;     
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row; /*yes row*/ 
+    flex-wrap: wrap; 
+}
+
+.dog-card { /*changin btw span/div doesn't do anyting*/ 
     padding: 10px;
     margin: 10px 25px 10px 25px; 
     border: 1px solid;
     border-color: #ebe8e5;
     border-radius: 1%;
+    display: flex;
+    flex-direction: column; /*column yes*/
     /* box-sizing: border-box; */
-    display: inline-block
+    /* display: inline-block */
     
 }
 .name {
@@ -50,15 +70,26 @@ body {
     font-size: small;
     padding: 0px;
     margin: 1px 5px 15px 2.5px; 
+    display: flex; 
 }
-.traits {
+
+.traits {  /*changing btw span/div doesn't do anyting*/
     font-family: 'open sans';
     font-size: xx-small;
     background-color: #89DEEF;
     padding: 5px; 
-    margin: 1.5px;
+    margin: auto; /*auto margin fixed the pills stretching across*/
+    width: fit-content; 
     border:#89DEEF solid 1px;  
     border-radius: 45%;
+    display: grid; 
+    place-content: center; 
+    /* grid-template-columns: repeat(auto-fit, minmax(10ch, 1fr)); */
+    /* display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: flex-start; */
+    /* flex-basis: auto;  */
 }
 .contact-headings {
     font-family: 'open sans';
