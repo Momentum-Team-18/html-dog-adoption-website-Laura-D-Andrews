@@ -52,15 +52,19 @@ body {
 .card-container {
     display: flex;
     flex-direction: row; /*yes row*/
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    /* gap: 2px 2px;   */
     background-color: pink; 
 }
 
 .dog-card { /*changin btw span/div doesn't do anyting*/ 
     padding: 10px;
-    margin: 10px 25px 10px 25px; 
+    margin: 10px 25px 10px 25px; /*auto doesn't work here*/
     border: 1px solid;
     border-color: #ebe8e5;
+    width: 250px; /*this set the width of the 
+    card and the pics followed along for some reason
+     - because it's a content box?*/
     background-color: green; 
     border-radius: 1%;
     display: flex;
@@ -68,6 +72,15 @@ body {
     /* box-sizing: border-box; */
     /* display: inline-block */
     
+}
+
+/* .img-format {
+    background-color: red; 
+    display: flex; 
+    justify-content: space-evenly;
+    padding: 1rem;
+    max-width: 20rem;
+    margin: 0 auto;  */
 }
 .name {
     font-family: Oswald;
@@ -78,7 +91,7 @@ body {
     background-color: purple; 
 }
 
-.bubbles {
+.bubbles-box {
     display: flex;
     flex-wrap: wrap; 
 }
@@ -91,8 +104,7 @@ body {
     margin: auto; /*auto margin fixed the pills stretching across*/
     width: fit-content; 
     border:#89DEEF solid 1px;  
-    border-radius: 45%;
-    display: grid; 
+    border-radius: 45%; 
     place-content: center; 
     /* grid-template-columns: repeat(auto-fit, minmax(10ch, 1fr)); */
     /* display: flex; 
