@@ -33,28 +33,40 @@ body {
     align-items: center; 
 }
 
+.adopt-head-intro-box {
+    padding: 25px;
+    display: flex; 
+    flex-direction: column; 
+    width: 50%; 
+    background-color: yellow; 
+}
+
 .adopt-heading {
     font-family: 'open sans';
     font-size: medium;
-    margin: 15px 25px; 
+    /* margin: 15px 25px;  */
+    background-color: red; 
 }
 
 .adopt-intro {
     font-family: 'open sans';
     font-size: x-small;
-    margin: 10px 25px 5px 25px; 
+    /* margin: 10px 25px 5px 25px;  */
+    background-color: turquoise; 
 }
 
-.main {
+/* .main {
     display: flex;     
-}
+} */
 
 .card-container {
     display: flex;
     flex-direction: row; /*yes row*/
     flex-wrap: wrap;
+    margin: 0; 
+    padding: 0px 25px; 
     /* gap: 2px 2px;   */
-    /* background-color: pink;  */
+    background-color: pink; 
 }
 
 .dog-card { 
@@ -66,25 +78,16 @@ body {
     card and the pics followed along for some reason
      - because it's a content box?*/
     background-color: green; 
-    border-radius: 1%;
+    border-radius: 2%;
     display: flex;
     flex-direction: column; /*column yes*/
     
 }
-
-/* .img-format {
-    background-color: red; 
-    display: flex; 
-    justify-content: space-evenly;
-    padding: 1rem;
-    max-width: 20rem;
-    margin: 0 auto;  */
-
 .name {
     font-family: Oswald;
     font-size: small;
     padding: 0px;
-    margin: 1px 5px 10px 2.5px; 
+    margin: 1px 5px 10px 0px; 
     display: flex; 
     /* background-color: purple;  */
 }
@@ -101,12 +104,13 @@ body {
     font-size: xx-small;
     background-color: #89DEEF;
     padding: 5px; 
-    margin: 3px; /*auto margin fixed the pills stretching across
+    margin: 3px 3px 3px 0px; /*auto margin fixed the pills stretching across
     but centered everything, using a number justified everthing
     to the left and spaced evenly*/
     width: fit-content; 
     /* border:#89DEEF solid 1px;   */
-    border-radius: 45%; 
+    border-radius: 1em; /*why did em work better than - % creates oval
+    and em creates pill shape? %*/
     place-content: center; 
     /* justify-content: flex-start; 
     align-content: center; */
