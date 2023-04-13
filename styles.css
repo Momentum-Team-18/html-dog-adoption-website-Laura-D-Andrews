@@ -7,7 +7,7 @@ body {
 
 .header {
     background-color: #004175;
-    padding: 20px;
+    padding: 0px 20px;
     margin: 0;
     font-family: Oswald;
     font-size: medium;
@@ -16,6 +16,7 @@ body {
     display: row; /*put nav and h1 in a row*/ 
     justify-content: space-between;
     align-items: center; 
+    /*need border color #89DEEF*/ 
 
 }
 
@@ -26,33 +27,45 @@ body {
     margin: 0px;
 }
 
-.homepage-intro {
-    font-family: 'open sans';
-    font-size: x-small;
-    margin: 25px 75px 5px 75px;
+.dog-hero-box {
+    display: flex; 
+    margin: 0px 0px 25px 0px; 
+    background-color: pink;
+}
+
+.homepage-intro-box {
+    /* font-family: 'open sans';
+    font-size: x-small; */
+    margin: 0 auto; 
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
     align-items: center; 
+    /* background-color: purple; */
 }
 
 .adopt-head-intro-box {
-    padding: 25px;
+    padding: 0px 30px;
     display: flex; 
     flex-direction: column; 
     width: 50%; 
-    background-color: yellow; 
+    /* background-color: yellow;  */
 }
 
 .adopt-heading {
     font-family: 'open sans';
     font-size: medium;
     /* margin: 15px 25px;  */
-    background-color: red; 
+    /* background-color: red;  */
 }
 
 .adopt-intro {
     font-family: 'open sans';
     font-size: x-small;
     /* margin: 10px 25px 5px 25px;  */
-    background-color: turquoise; 
+    /* background-color: turquoise;  */
 }
 
 /* .main {
@@ -66,7 +79,7 @@ body {
     margin: 0; 
     padding: 0px 25px; 
     /* gap: 2px 2px;   */
-    background-color: pink; 
+    /* background-color: pink;  */
 }
 
 .dog-card { 
@@ -77,7 +90,7 @@ body {
     width: 250px; /*this set the width of the 
     card and the pics followed along for some reason
      - because it's a content box?*/
-    background-color: green; 
+    /* background-color: green;  */
     border-radius: 2%;
     display: flex;
     flex-direction: column; /*column yes*/
@@ -124,13 +137,13 @@ body {
 .contact-headings {
     font-family: 'open sans';
     font-size: large; 
-    margin: 25px 25px 5px 25px; 
+    margin: 25px 25px 5px 35px; 
 }
 .contact-info {
     font-family: 'open sans'; 
     font-style: italic;
     font-size: x-small; 
-    margin: 5px 25px 3px 25px;
+    margin: 5px 25px 3px 35px;
 }
 .hours-list {
     font-family: 'open sans'; 
