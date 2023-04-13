@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;600&display=swap');
+body {
+    padding: 0px;
+    margin: 0;
+}
+.main {
+    margin-bottom: 50px; 
+}
+.header {
+    background-color: #004175;
+    padding: 20px;
+    margin: 0;
+    font-family: Oswald;
+    font-size: medium;
+    color: white;
+}
+.nav {
+    font-family: 'open sans';
+    font-size: small;
+    padding: 0px;
+    margin: 0px;
+}
+.homepage-intro {
+    font-family: 'open sans';
+    font-size: x-small;
+    margin: 25px 75px 5px 75px;
+}
+.adopt-heading {
+    font-family: 'open sans';
+    font-size: medium;
+    margin: 15px 25px; 
+}
+.adopt-intro {
+    font-family: 'open sans';
+    font-size: x-small;
+    margin: 10px 25px 5px 25px; 
+}
+.dog-card {
+    padding: 10px;
+    margin: 10px 25px 10px 25px; 
+    border: 1px solid;
+    border-color: #ebe8e5;
+    border-radius: 1%;
+    /* box-sizing: border-box; */
+    display: inline-block
+    
+}
+.name {
+    font-family: Oswald;
+    font-size: small;
+    padding: 0px;
+    margin: 1px 5px 15px 2.5px; 
+}
+.traits {
+    font-family: 'open sans';
+    font-size: xx-small;
+    background-color: #89DEEF;
+    padding: 5px; 
+    margin: 1.5px;
+    border:#89DEEF solid 1px;  
+    border-radius: 45%;
+}
+.contact-headings {
+    font-family: 'open sans';
+    font-size: large; 
+    margin: 25px 25px 5px 25px; 
+}
+.contact-info {
+    font-family: 'open sans'; 
+    font-style: italic;
+    font-size: x-small; 
+    margin: 5px 25px 3px 25px;
+}
+.hours-list {
+    font-family: 'open sans'; 
+    font-size: x-small;
+    margin: 5px 15px 50px 15px;
+}
+.foot-format {
+    margin: 50px 0px 0px 0px;
+}
+
+.foot-img {
+    /* padding: 0; 
+    margin: 0;  */
+    background:
+    linear-gradient(
+        rgba(255, 0, 0, 0, 0.45),
+        rgba(255, 0, 0, 0, 0.45)
+    ),
+    url(images/donate.jpg); 
+}
