@@ -5,6 +5,8 @@ body {
     margin: 0;
 }
 
+/* do I need this body info? */
+
 .header {
     background-color: #004175;
     padding: 0px 20px;
@@ -12,73 +14,73 @@ body {
     font-family: Oswald;
     font-size: medium;
     color: white;
-    display: flex; /*allows children (nav and h1 element to be flexible*/ 
-    display: row; /*put nav and h1 in a row*/ 
+    display: flex;
+    display: row; 
     justify-content: space-between;
     align-items: center; 
-    /*need border color #89DEEF*/ 
-
+    /* need border color #89DEEF */ 
 }
-
 .nav {
     font-family: 'open sans';
     font-size: small;
     padding: 5px;
     margin: 0px;
 }
-
 .dog-hero-box {
     display: flex; 
     margin: 0px 0px 25px 0px; 
-    background-color: pink;
+    /* background-color: pink; */
 }
-
 .homepage-intro-box {
-    /* font-family: 'open sans';
-    font-size: x-small; */
     margin: 0 auto; 
     width: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-
     align-items: center; 
     /* background-color: purple; */
-}
 
+    /* don't need font info because that's controlled in
+    homepage-intro-text */
+}
+.homepage-intro-text {
+    font-family: 'open sans';
+    font-size: small;
+
+    /* don't need margin etc. because homepage-intro-box
+    is controlling that */
+}
 .adopt-head-intro-box {
     padding: 0px 30px;
     display: flex; 
     flex-direction: column; 
     width: 50%; 
     /* background-color: yellow;  */
-}
 
-.adopt-heading {
+    /* don't need font info because adopt-heading-text 
+    and adopt intro text are controlling that */ 
+}
+.adopt-heading-text {
     font-family: 'open sans';
     font-size: medium;
-    /* margin: 15px 25px;  */
     /* background-color: red;  */
-}
 
-.adopt-intro {
+    /* didn't need margin etc. because head-intro-box 
+    is controlling position */
+}
+.adopt-intro-text {
     font-family: 'open sans';
     font-size: x-small;
-    /* margin: 10px 25px 5px 25px;  */
     /* background-color: turquoise;  */
+
+    /* didn't need margin etc. because head-intro-box 
+    is controlling position */
 }
-
-/* .main {
-    display: flex;     
-} */
-
 .card-container {
     display: flex;
-    flex-direction: row; /*yes row*/
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 0; 
     padding: 0px 25px; 
-    /* gap: 2px 2px;   */
     /* background-color: pink;  */
 }
 
@@ -87,13 +89,14 @@ body {
     margin: 3px; 
     border: 1px solid;
     border-color: #ebe8e5;
-    width: 250px; /*this set the width of the 
-    card and the pics followed along for some reason
-     - because it's a content box?*/
-    /* background-color: green;  */
+    width: 250px; 
     border-radius: 2%;
     display: flex;
-    flex-direction: column; /*column yes*/
+    flex-direction: column; 
+    /* background-color: green;  */
+
+    /* width=250px set the width of the 
+    card and the pics followed along because it's a content box? */
     
 }
 .name {
@@ -112,27 +115,22 @@ body {
     /* background-color: orange;  */
 }
 
-.traits {  /*changing btw span/div doesn't do anyting*/
+.traits { 
     font-family: 'open sans';
     font-size: xx-small;
     background-color: #89DEEF;
     padding: 5px; 
-    margin: 3px 3px 3px 0px; /*auto margin fixed the pills stretching across
-    but centered everything, using a number justified everthing
-    to the left and spaced evenly*/
+    margin: 3px 3px 3px 0px; 
     width: fit-content; 
-    /* border:#89DEEF solid 1px;   */
-    border-radius: 1em; /*why did em work better than - % creates oval
-    and em creates pill shape? %*/
+    border-radius: 1em; 
     place-content: center; 
-    /* justify-content: flex-start; 
-    align-content: center; */
-    /* grid-template-columns: repeat(auto-fit, minmax(10ch, 1fr)); */
-    /* display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: flex-start; */
-    /* flex-basis: auto;  */
+
+    /* auto margin fixed the pills stretching across
+    but centered everything, using numbers for margin justified everthing
+    to the left and spaced evenly */
+
+     /* % creates oval
+    and em creates pill shape? */
 }
 .contact-headings {
     font-family: 'open sans';
