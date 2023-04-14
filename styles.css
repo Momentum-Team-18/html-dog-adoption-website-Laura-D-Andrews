@@ -4,9 +4,6 @@ body {
     padding: 0px;
     margin: 0;
 }
-
-/* do I need this body info? */
-
 .header {
     background-color: #004175;
     padding: 0px 20px;
@@ -131,8 +128,7 @@ body {
     background-color: green; 
 
     /* width=250px set the width of the 
-    card and the pics followed along because it's a content box? */
-    
+    card and the pics followed along because it's a content box? */    
 }
 .name {
     font-family: Oswald;
@@ -149,7 +145,6 @@ body {
     justify-content: left;
     background-color: orange; 
 }
-
 .traits { 
     font-family: 'open sans';
     font-size: xx-small;
@@ -187,17 +182,19 @@ body {
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: pink;
-     
+    align-items: center;
+    background-color: pink;    
 }
-
 .link-box {
-    background-color: aqua;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    width: 100%;
+    /* background-color: aqua; */
 }
-
 .img-box {
     display: flex; 
-    background-color: red; 
+    /* background-color: red;  */
 }
 
 /*display flex for img box and then each (invidual
@@ -205,18 +202,22 @@ img got them all to be the same height and centered them */
 /*display flex only on individual images (and not 
 container too, put img in a column*/ 
 
+.foot-links {
+    display: flex;
+    align-items: center;
+}
 .foot-img {
-    display: flex; 
-    background-color: green;    
+    display: flex;
+    /* background-color: green;     */
 }
 .foot-format-box a:link {
     color: white;
     text-decoration: none;
-    background-color: purple;  
+    /* background-color: purple;   */
 }
 .foot-format-box a:visited {
     color: white; 
     text-decoration: none;
-    background-color: purple;   
+    /* background-color: purple;    */
 }
 
