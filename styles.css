@@ -185,33 +185,38 @@ body {
 }
 .foot-format-box {
     display: flex; 
-    flex-direction: column; /* put images and links in column */ 
-    background-color: pink; 
-    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: pink;
+     
 }
 
-.foot-img-box {
-    display: flex; /* put img in flexible row */
-    object-fit: cover; 
-    margin: 0px; 
-    background-color: green;
+.link-box {
+    background-color: aqua;
 }
+
+.img-box {
+    display: flex; 
+    background-color: red; 
+}
+
+/*display flex for img box and then each (invidual
+img got them all to be the same height and centered them */
+/*display flex only on individual images (and not 
+container too, put img in a column*/ 
 
 .foot-img {
-    display: flex; /*made img fill up img box */
-    margin: 0 auto; /*spaced them out evenly, but still have space between */ 
-    /* flex-grow: 1;  */
-    /* justify-content: flex-start; */
-    /* object-fit: fill;  */
-    /* width: 100%; 
-    height: 100%;  */
-    /* background-color: orange;  */
-    /* width: 364px;  */
+    display: flex; 
+    background-color: green;    
+}
+.foot-format-box a:link {
+    color: white;
+    text-decoration: none;
+    background-color: purple;  
+}
+.foot-format-box a:visited {
+    color: white; 
+    text-decoration: none;
+    background-color: purple;   
 }
 
-.foot-link-box {
-    display: flex; 
-    justify-content: space-around; /* spaced them to middle of each pic */ 
-    background-color: purple; 
-    /* align-items: center;  */
-}
