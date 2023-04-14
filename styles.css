@@ -21,30 +21,35 @@ body {
     /* need border color #89DEEF */ 
 }
 .nav-box {
-    /* font-family: 'open sans';
-    font-size: small;
-    color: white; */
     padding: 5px;
     margin: 0px;
     display: flex; 
-
+}
+.nav-box a:link {
+    padding: 5px;
+    margin: 0px;
+    display: flex; 
+    color: white;
+    text-decoration: none;  
+    font-family: 'open sans'; 
+    font-size: small;
     /* display flex put links in a row */ 
 }
 
-.nav-links {
-    font-family: 'open sans'; 
-    font-size: small; 
+.nav-box a:visited {
+    padding: 5px;
+    margin: 0px;
+    display: flex; 
     color: white;
-    /* margin: 2px;  */
-    padding: 5px; 
+    text-decoration: none; 
+    font-family: 'open sans'; 
+    font-size: small;
 
+    /* display flex put links in a row */ 
+}
     /* add separate nav-links class allowed 
     padding to separate links (individual link 
     placed in class) */ 
-
-    /* use button to make look like not a link? */ 
-}
-
 .dog-hero-box {
     display: flex; 
     /* flex-grow: 1;  */
@@ -135,14 +140,14 @@ body {
     padding: 0px;
     margin: 1px 5px 10px 0px; 
     display: flex; 
-    /* background-color: purple;  */
+    background-color: purple; 
 }
 
 .bubbles-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    /* background-color: orange;  */
+    background-color: orange; 
 }
 
 .traits { 
@@ -151,7 +156,7 @@ body {
     background-color: #89DEEF;
     padding: 5px; 
     margin: 3px 3px 3px 0px; 
-    width: fit-content; 
+    /* width: fit-content;  */
     border-radius: 1em; 
     place-content: center; 
 
