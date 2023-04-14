@@ -20,16 +20,45 @@ body {
     align-items: center; 
     /* need border color #89DEEF */ 
 }
-.nav {
-    font-family: 'open sans';
+.nav-box {
+    /* font-family: 'open sans';
     font-size: small;
+    color: white; */
     padding: 5px;
     margin: 0px;
+    display: flex; 
+
+    /* display flex put links in a row */ 
 }
+
+.nav-links {
+    font-family: 'open sans'; 
+    font-size: small; 
+    color: white;
+    /* margin: 2px;  */
+    padding: 5px; 
+
+    /* add separate nav-links class allowed 
+    padding to separate links (individual link 
+    placed in class) */ 
+
+    /* use button to make look like not a link? */ 
+}
+
 .dog-hero-box {
     display: flex; 
+    /* flex-grow: 1;  */
     margin: 0px 0px 25px 0px; 
-    /* background-color: pink; */
+    background-color: pink;
+}
+
+.dog-hero-img {
+    display: flex; 
+    width: 100%;
+    height: 100%; 
+    /* flex-grow: 1;  */
+    /* width: 1092px;  */
+    background-color: red; 
 }
 .homepage-intro-box {
     margin: 0 auto; 
@@ -81,7 +110,8 @@ body {
     flex-wrap: wrap;
     margin: 0; 
     padding: 0px 25px; 
-    /* background-color: pink;  */
+    /* flex-grow: 1;  */
+    background-color: pink; 
 }
 
 .dog-card { 
@@ -93,7 +123,7 @@ body {
     border-radius: 2%;
     display: flex;
     flex-direction: column; 
-    /* background-color: green;  */
+    background-color: green; 
 
     /* width=250px set the width of the 
     card and the pics followed along because it's a content box? */
@@ -149,17 +179,34 @@ body {
     margin: 5px 15px 50px 15px;
 }
 .foot-format-box {
-    margin: 50px 0px 0px 0px;
+    display: flex; 
+    flex-direction: column; /* put images and links in column */ 
+    background-color: pink; 
+    /* align-items: center; */
 }
 
 .foot-img-box {
-
+    display: flex; /* put img in flexible row */
+    object-fit: cover; 
+    margin: 0px; 
+    background-color: green;
 }
 
 .foot-img {
-   
+    display: flex; /*made img fill up img box */
+    margin: 0 auto; /*spaced them out evenly, but still have space between */ 
+    /* flex-grow: 1;  */
+    /* justify-content: flex-start; */
+    /* object-fit: fill;  */
+    /* width: 100%; 
+    height: 100%;  */
+    /* background-color: orange;  */
+    /* width: 364px;  */
 }
 
 .foot-link-box {
-    
+    display: flex; 
+    justify-content: space-around; /* spaced them to middle of each pic */ 
+    background-color: purple; 
+    /* align-items: center;  */
 }
