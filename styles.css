@@ -6,11 +6,11 @@ body {
 }
 .header {
     background-color: #004175;
-    border-bottom: #89DEEF;
+    border-bottom: 5px solid #89DEEF;
     padding: 0px 20px;
     margin: 0;
     font-family: Oswald;
-    font-size: large;
+    font-size: medium;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -136,7 +136,6 @@ body {
     width: 100%;
     margin-top: 50px;
 }
-
 .link-img-box {
     position: relative; 
     text-align: center;
@@ -150,14 +149,15 @@ body {
     opacity: 0.6; 
 }
 .link-img-box a {
-    /* text-align: center; */
     position: relative;
-    bottom: 175px; 
+    bottom: 185px; 
     left: 0px; 
     font-family: Oswald; 
-    font-size: xx-large;  
+    font-size: 45px; 
+    font-weight: 400; 
     color: white; 
     text-decoration: none;
+    letter-spacing: -1px;
 }
 .foot-format-box img:hover {
     opacity: 1.0; 
