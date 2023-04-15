@@ -10,7 +10,7 @@ body {
     padding: 0px 20px;
     margin: 0;
     font-family: Oswald;
-    font-size: medium;
+    font-size: 15px; 
     color: white;
     display: flex;
     justify-content: space-between;
@@ -44,9 +44,6 @@ body {
     width: 100%;
     margin-bottom: 25px;
 }
-
-/* using height for box made text scroll up/down - not good */ 
-
 .dog-hero-img img {
     width: 100%;
     aspect-ratio: 2.5 / 1;
@@ -117,19 +114,19 @@ body {
 }
 .contact-headings {
     font-family: 'open sans';
-    font-size: large; 
-    margin: 25px 25px 5px 35px; 
+    font-size: 20px; 
+    margin: 25px 25px 10px 45px; 
 }
 .contact-info {
     font-family: 'open sans'; 
     font-style: italic;
-    font-size: x-small; 
-    margin: 5px 25px 3px 35px;
+    font-size: 12px; 
+    margin: 5px 25px 0px 45px;
 }
 .hours-list {
     font-family: 'open sans'; 
-    font-size: x-small;
-    margin: 5px 15px 50px 15px;
+    font-size: 12px; 
+    margin: 5px 15px 50px 40px;
 }
 .foot-format-box {
     display: flex; 
