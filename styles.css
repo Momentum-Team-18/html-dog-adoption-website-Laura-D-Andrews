@@ -51,7 +51,6 @@ body {
     display: flex; 
     /* flex-grow: 1;  */
     margin: 0px 0px 25px 0px; 
-    background-color: pink;
 }
 
 .dog-hero-img {
@@ -60,7 +59,6 @@ body {
     height: 100%; 
     /* flex-grow: 1;  */
     /* width: 1092px;  */
-    background-color: red; 
 }
 .homepage-intro-box {
     margin: 0 auto; 
@@ -68,43 +66,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    /* background-color: purple; */
-
-    /* don't need font info because that's controlled in
-    homepage-intro-text */
+    padding-bottom: 50px;
 }
 .homepage-intro-text {
     font-family: 'open sans';
     font-size: small;
-
-    /* don't need margin etc. because homepage-intro-box
-    is controlling that */
 }
 .adopt-head-intro-box {
     padding: 0px 30px;
     display: flex; 
     flex-direction: column; 
     width: 50%; 
-    /* background-color: yellow;  */
-
-    /* don't need font info because adopt-heading-text 
-    and adopt intro text are controlling that */ 
 }
 .adopt-heading-text {
     font-family: 'open sans';
     font-size: medium;
-    /* background-color: red;  */
-
-    /* didn't need margin etc. because head-intro-box 
-    is controlling position */
 }
 .adopt-intro-text {
     font-family: 'open sans';
     font-size: x-small;
-    /* background-color: turquoise;  */
-
-    /* didn't need margin etc. because head-intro-box 
-    is controlling position */
 }
 .card-container {
     display: flex;
@@ -112,8 +92,6 @@ body {
     flex-wrap: wrap;
     margin: 0; 
     padding: 0px 25px; 
-    /* flex-grow: 1;  */
-    background-color: pink; 
 }
 
 .dog-card { 
@@ -125,10 +103,7 @@ body {
     border-radius: 2%;
     display: flex;
     flex-direction: column; 
-    background-color: green; 
-
-    /* width=250px set the width of the 
-    card and the pics followed along because it's a content box? */    
+    background-color: green;   
 }
 .name {
     font-family: Oswald;
@@ -136,14 +111,12 @@ body {
     padding: 0px;
     margin: 1px 5px 10px 0px; 
     display: flex; 
-    background-color: purple; 
 }
 
 .bubbles-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    background-color: orange; 
 }
 .traits { 
     font-family: 'open sans';
@@ -151,16 +124,8 @@ body {
     background-color: #89DEEF;
     padding: 5px; 
     margin: 3px 3px 3px 0px; 
-    /* width: fit-content;  */
     border-radius: 1em; 
     place-content: center; 
-
-    /* auto margin fixed the pills stretching across
-    but centered everything, using numbers for margin justified everthing
-    to the left and spaced evenly */
-
-     /* % creates oval
-    and em creates pill shape? */
 }
 .contact-headings {
     font-family: 'open sans';
@@ -180,44 +145,28 @@ body {
 }
 .foot-format-box {
     display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: pink;    
-}
-.link-box {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-evenly; 
     width: 100%;
-    /* background-color: aqua; */
-}
-.img-box {
-    display: flex; 
-    /* background-color: red;  */
 }
 
-/*display flex for img box and then each (invidual
-img got them all to be the same height and centered them */
-/*display flex only on individual images (and not 
-container too, put img in a column*/ 
+.link-img-box {
+    position: relative; 
+    width: 100%;
+}
 
-.foot-links {
-    display: flex;
-    align-items: center;
+.link-img-box img {
+    width: 100%; 
+    height: 100%; 
 }
-.foot-img {
-    display: flex;
-    /* background-color: green;     */
-}
-.foot-format-box a:link {
-    color: white;
-    text-decoration: none;
-    /* background-color: purple;   */
-}
-.foot-format-box a:visited {
+.text {
+    text-align: center;
+    position: relative;
+    bottom: 200px; 
+    left: 0px; 
+    font-family: Oswald; 
+    font-size: x-large;   
     color: white; 
-    text-decoration: none;
-    /* background-color: purple;    */
 }
-
+.foot-format-box img:hover {
+    opacity: 0.9; 
+    background-color: #5D00E1; 
+}
