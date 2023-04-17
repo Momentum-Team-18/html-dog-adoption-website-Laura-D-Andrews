@@ -5,31 +5,34 @@ body {
     margin: 0;
 }
 .header {
-    background-color: #004175;
-    border-bottom: 5px solid #89DEEF;
-    padding: 0px 20px;
-    margin: 0;
-    font-family: Oswald;
-    font-size: 15px; 
-    color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    /* need border color #89DEEF */ 
+    align-items: center;
+    padding: 20px 25px;
+    margin: 0;
+    border-bottom: 3px solid #89DEEF;
+    background-color: #004175;
+    color: white;
+    font-family: Oswald;
+    font-size: 15px; 
+}
+.header-text {
+    font-size: 24px;
+    font-weight: 600;
 }
 .nav-box {
+    display: flex;
     padding: 5px;
-    margin: 0px;
-    display: flex; 
+    margin: 0px;   
 }
 .nav-box a:link {
+    display: flex; 
     padding: 5px;
     margin: 0px;
-    display: flex; 
     color: white;
     text-decoration: none;  
     font-family: 'open sans'; 
-    font-size: small;
+    font-size: 11px;
 }
 .nav-box a:visited {
     padding: 5px;
@@ -46,56 +49,55 @@ body {
 }
 .dog-hero-img img {
     width: 100%;
-    aspect-ratio: 2.5 / 1;
 }
 .homepage-intro-box {
     margin: 0 auto; 
-    width: 75%;
-    text-align: justify;  
+    width: 65%;
+    text-align: justify; 
 }
 .homepage-intro-text {
+    padding-bottom: 7px;
     font-family: 'open sans';
-    font-size: smaller;
-    
+    font-size: 13px;  
 }
 .adopt-head-intro-box {
-    padding: 0px 30px;
     display: flex; 
     flex-direction: column; 
-    width: 50%; 
+    width: 75%; 
+    padding: 0px 28px;   
 }
 .adopt-heading-text {
     font-family: 'open sans';
-    font-size: medium;
+    font-size: 16px
 }
 .adopt-intro-text {
     font-family: 'open sans';
-    font-size: x-small;
+    font-size: 12px; 
 }
 .card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0; 
     padding: 0px 25px; 
+    margin: 0;  
 }
-
 .dog-card { 
+    display: flex;
+    flex-direction: column;
+    width: 250px; 
     padding: 10px;
     margin: 3px; 
     border: 1px solid;
-    border-color: #ebe8e5;
-    width: 250px; 
-    border-radius: 2%;
-    display: flex;
-    flex-direction: column;    
+    border-color: #BDBDBD;
+    border-radius: 1%; 
+    border-width: .75px;  
 }
 .name {
-    font-family: Oswald;
-    font-size: small;
+    display: flex;
     padding: 0px;
-    margin: 1px 5px 10px 0px; 
-    display: flex; 
+    margin: 3px 5px 10px 0px; 
+    font-family: Oswald;
+    font-size: 13px;    
 }
 
 .bubbles-box {
@@ -104,62 +106,65 @@ body {
     justify-content: left;
 }
 .traits { 
-    font-family: 'open sans';
-    font-size: xx-small;
-    background-color: #89DEEF;
     padding: 5px; 
-    margin: 3px 3px 3px 0px; 
+    margin: 3px 5px 3px 0px;
+    font-family: 'open sans';
+    font-size: 9px;
     border-radius: 1em; 
-    place-content: center; 
+    background-color: #89DEEF;   
 }
 .contact-headings {
-    font-family: 'open sans';
-    font-size: 20px; 
     margin: 25px 25px 10px 45px; 
+    font-family: 'open sans';
+    font-size: 18px; 
 }
 .contact-info {
+    margin: 5px 25px 0px 45px;
     font-family: 'open sans'; 
     font-style: italic;
     font-size: 12px; 
-    margin: 5px 25px 0px 45px;
+}
+.contact-decor {
+    color: blue; 
+    font-style: italic;
+    text-decoration: underline; 
 }
 .hours-list {
+    margin: 20px 15px 50px 40px;
     font-family: 'open sans'; 
-    font-size: 12px; 
-    margin: 5px 15px 50px 40px;
+    font-size: 12px;  
 }
 .foot-format-box {
-    display: flex; 
+    display: flex;
     width: 100%;
     margin-top: 50px;
 }
 .link-img-box {
-    position: relative; 
     text-align: center;
     width: 100%;
-    max-height: 300px; 
-    background-color: #324AB2;    
+    max-height: 245px; 
+    background-color: #6633FF; 
 }
 .link-img-box img {
     width: 100%; 
-    height: 300px; 
+    height: 245px; 
     opacity: 0.6; 
 }
 .link-img-box a {
     position: relative;
-    bottom: 185px; 
+    bottom: 155px; 
     left: 0px; 
-    font-family: Oswald; 
-    font-size: 45px; 
-    font-weight: 400; 
     color: white; 
-    text-decoration: none;
-    letter-spacing: -1px;
+    font-family: Oswald; 
+    font-size: 40px; 
+    text-decoration: none; 
 }
 .foot-format-box img:hover {
     opacity: 1.0; 
     transition: 1s;         
 }
-
-/* how to make it so when you hover
-over actually link it doesn't turn purple again? */ 
+.foot-format-box a:hover {
+    opacity: 1.0; 
+    transition: 1s;
+}
+ 
